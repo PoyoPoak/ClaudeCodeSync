@@ -1,0 +1,39 @@
+# Allowlist: everything in ~/.claude stays local unless named here.
+# This keeps credentials, memory, transcripts, and new app data out of git by default.
+# To sync another file or folder, add a `!/<name>` line (see README.md, "Customize what syncs").
+/*
+
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/SETUP.md
+!/LICENSE
+
+# Instructions
+!/CLAUDE.md
+!/rules/
+
+# Settings. model, effortLevel, and modelSettings stay per device (see README.md).
+!/settings.json
+!/keybindings.json
+
+# Hooks, scripts, and user-level Claude Code folders. Each is tracked once it exists.
+!/hooks/
+!/scripts/
+!/commands/
+!/agents/
+!/tools/
+!/output-styles/
+!/themes/
+!/workflows/
+!/skills/
+
+# Configs from ~/.config that are symlinked into this repo (see dotconfig/links.txt).
+!/dotconfig/
+
+# Skills Claude Code syncs from your claude.ai account manage themselves.
+/skills/synced/
+/skills/.trash/
+
+# Python bytecode from skill scripts and tests.
+__pycache__/

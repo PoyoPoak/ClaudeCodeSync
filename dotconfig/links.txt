@@ -1,0 +1,4 @@
+# Paths under ~/.config to sync, one per line. install.sh moves each into dotconfig/ and leaves a symlink behind.
+# Examples:
+# ccstatusline
+# herdr/config.toml

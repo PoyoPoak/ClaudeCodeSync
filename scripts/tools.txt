@@ -1,0 +1,9 @@
+# Tools this config needs on every device. install.sh and verify-config-sync.sh report the missing ones.
+# One tool per line: <command> <install hint>. Add the CLIs your hooks, statusline, and skills call.
+git      install from your package manager
+python3  install from your package manager
+flock    util-linux on Linux; on macOS: brew install flock
+timeout  coreutils on Linux; on macOS: brew install coreutils
+setsid   util-linux on Linux; on macOS: brew install util-linux
+claude   https://docs.claude.com/en/docs/claude-code
+gh       optional, lets verify confirm the repo is private: https://cli.github.com, then gh auth login
